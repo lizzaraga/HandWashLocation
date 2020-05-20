@@ -49,6 +49,9 @@ export default {
         .then((coords)=>{
             this.location = coords
         })
+        .catch((err)=>{
+          console.log('location error: '+err)
+        })
   }
 };
 </script>
